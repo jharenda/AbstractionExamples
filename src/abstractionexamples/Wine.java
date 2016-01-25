@@ -7,53 +7,34 @@ package abstractionexamples;
 //concrete- so that wine objects can be instantiated
 public class Wine extends AlcoholBeverage {
 // all wine is fermented, but not all alcohol is
+
     private final static boolean IS_FERMENTED = true;
-    
-    
+    private String grape_Variety;
+    private String region;
+    private int vintageYear;
 
-    @Override
-    public void setFreezingTemperature(int temperature) {
-       temperature = temperature;
+    public String getGrape_Variety() {
+        return grape_Variety;
     }
 
-  
-   
-
-    @Override
-    public void setColor(String color) {
-        this.color = color;
+    public void setGrape_Variety(String grape_Variety) {
+        this.grape_Variety = grape_Variety;
     }
 
-    @Override
-    public String getColor() {
-        return color;
+    public String getRegion() {
+        return region;
     }
 
-    @Override
-    public double getVolume() {
-        return volume;
+    public void setRegion(String region) {
+        this.region = region;
     }
 
-    @Override
-    public void setVolume(double volume) {
-        this.volume = volume;
+    public int getVintageYear() {
+        return vintageYear;
     }
 
-    @Override
-    public void setAlcoholPercent(double alcoholPercent) {
-        this.alcoholPercent = alcoholPercent;
+    public void setVintageYear(int vintageYear) {
+        this.vintageYear = vintageYear;
     }
 
-    @Override
-    public double getAlcholPercent() {
-        return alcoholPercent;
-    }
-    @Override
-    public String getServingGlass(){
-        return servingGlass; 
-    }
-   @Override
-   public void setServingGlass(String servingGlass){
-       this.servingGlass = servingGlass; 
-   }
 }

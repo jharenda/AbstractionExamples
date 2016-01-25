@@ -12,19 +12,56 @@ public abstract class AlcoholBeverage implements Liquid {
     private String color;
     private double volume;
     private double alcoholPercent;
-    private String servingGlass; 
-// all alcoholbeverages have a percent measure of alcohol, but are implemented differently
+    private int legalDrinkingAge;
 
-    public abstract void setAlcoholPercent(double alcoholPercent);
-
-    public abstract double getAlcholPercent();
-
-    public abstract void setServingGlass(String glass);
-
-    public abstract String getServingGlass();
     @Override
     public int getFreezingTemperature() {
         return temperature;
+    }
+
+    @Override
+    public String getColor() {
+        return color;
+    }
+
+    public int getLegalDrinkingAge() {
+        return legalDrinkingAge;
+    }
+
+    public void setLegalDrinkingAge(int legalDrinkingAge) {
+        this.legalDrinkingAge = legalDrinkingAge;
+    }
+
+    @Override
+    public void setFreezingTemperature(int temperature) {
+        this.temperature = temperature;
+    }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public double getVolume() {
+        return volume;
+    }
+
+    @Override
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
+    public void setAlcoholPercent(double alcoholPercent) {
+        this.alcoholPercent = alcoholPercent;
+    }
+
+    public double getAlcholPercent() {
+        return alcoholPercent;
+    }
+    @Override 
+    public void pour(){
+        System.out.println("All liquids should be poured.");
     }
 
 }

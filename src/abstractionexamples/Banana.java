@@ -8,9 +8,10 @@ package abstractionexamples;
 public class Banana extends Fruit {
 
     private final static String GENUS = "MUSA";
-    private String shape;
-    private String color;
-    private int count;
+    private String shape = "banana shape";
+    private String color = "yellow";
+    private int bunchCount;
+    private String fruitClassification;
 
     @Override
     public String getColor() {
@@ -54,11 +55,21 @@ public class Banana extends Fruit {
     }
 
     public int getCount() {
-        return count;
+        return bunchCount;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setCount(int bunchCount) {
+        this.bunchCount = bunchCount;
+    }
+
+    @Override
+    public String getFruitClassification() {
+        return fruitClassification;
+    }
+
+    @Override
+    public void setFruitClassification(String fruitClassification) {
+        this.fruitClassification = fruitClassification;
     }
 
 }
