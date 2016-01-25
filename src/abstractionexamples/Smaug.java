@@ -5,12 +5,15 @@ package abstractionexamples;
  *
  * @author Jennifer
  */
-public class Smaug extends Dragon {
+public class Smaug extends EuropeanDragon {
     private String deathDate = "Novemeber, 1 TA 2770"; 
     private String vulnerability = "Underbelly";
     private String deathCause = "black arrow"; 
-    
-  
+    private String name; 
+    private String breathType; 
+    private boolean isWinged; 
+    private String magicalQuality; 
+    public String species; 
 
     public String getDeathDate() {
         return deathDate;
@@ -40,13 +43,25 @@ public class Smaug extends Dragon {
     public void setName(String name){
         this.name = "Smaug";
     }
+    @Override 
+    public String getName() {
+        return name; 
+    }
     @Override
     public void setIsWinged(boolean isWinged){
         isWinged = true; 
     }
     @Override
+    public boolean getIsWinged() {
+        return isWinged; 
+    }
+    @Override
     public void setBreathType(String breathType){
-        breathType = "fire";
+        this.breathType = "fire";
+    }
+    @Override
+    public String getBreathType() {
+        return breathType; 
     }
     @Override 
     public void setRealm(String realm){
@@ -54,24 +69,28 @@ public class Smaug extends Dragon {
     }
     @Override
     public void setColor (String color){
-        color = "red";
-        
+        color = "red";    
     }
-    @Override 
-    public void setEra (){
-        era = "Third Age";
-    }
+   
     @Override
     public void performMagic(){
         System.out.println("Smaug-specific magic");
     }
     @Override
     public void setSpecies(String species){
-        species = "Fire-Drake"; 
+        this.species = "Fire-Drake"; 
     }
-   @Override public String getName(){
-       return name; 
-   }
-    
-    
+    @Override
+    public String getSpecies() {
+        return species; 
+    }
+    @Override
+    public void setMagicalQuality(String magicalQuality){
+        this.magicalQuality = magicalQuality; 
+    }
+    @Override
+    public String getMagicalQuality(){
+        return magicalQuality; 
+    }
+  
 }

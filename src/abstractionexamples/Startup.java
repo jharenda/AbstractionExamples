@@ -23,10 +23,20 @@ public class Startup {
         apple.disperseSeeds();
         System.out.println(Apple.DOMAIN);
         Smaug smaug = new Smaug();
-        smaug.setEra();
+        smaug.setSpecies("Fire-Drake");
+        smaug.getEra();
+        System.out.println(smaug.getSpecies());
         System.out.println(smaug.getEra());
         smaug.setName("Name");
         System.out.println(smaug.getName());
+        Dalek dalek = new Dalek(5, "Wisconsin", "1/2/2016", "base I don't recall", "origin, not sure", "Evil doers", "Dalek");
+        dalek.isDangerous();
+        System.out.println(dalek.getEnemy()); 
+        LochNessMonster nessie = new LochNessMonster();
+        System.out.println(nessie.isDomesticated());
+        System.out.println(nessie.getHabitat());
+        nessie.setEncounters(518);
+        System.out.println(nessie.getEncounters());
     }
 
 }

@@ -1,17 +1,45 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package abstractionexamples;
 
 /**
  *
  * @author Jennifer
  */
-public interface EuropeanDragon extends MagicalCreature {
+public abstract class EuropeanDragon implements MagicalCreature, Dragon {
+      
     public final static String AREA = "Europe";
-   
-    public abstract void setRealm(String realm);
-    public abstract String getRealm();
-    public abstract void setColor(String color);
-    public abstract String getColor();
-    public abstract void setEra();
-    public abstract String getEra(); 
+   private String realm;
+   private String color;
+   private String era = "Third Age"; 
+
+    public String getRealm() {
+        return realm;
+    }
+
+    public void setRealm(String realm) {
+        this.realm = realm;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getEra() {
+        return era;
+    }
+
+    public void setEra(String era) {
+        this.era = era;
+    }
+    
 }
+    
+
