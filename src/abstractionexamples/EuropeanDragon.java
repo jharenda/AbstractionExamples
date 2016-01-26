@@ -10,11 +10,11 @@ package abstractionexamples;
  * @author Jennifer
  */
 public abstract class EuropeanDragon implements MagicalCreature, Dragon {
-      
-    public final static String AREA = "Europe";
-   private String realm;
-   private String color;
-   private String era = "Third Age"; 
+
+    private final static String AREA = "Europe";
+    private String realm;
+    private String color;
+    private String era = "Third Age";
 
     public String getRealm() {
         return realm;
@@ -39,7 +39,5 @@ public abstract class EuropeanDragon implements MagicalCreature, Dragon {
     public void setEra(String era) {
         this.era = era;
     }
-    
-}
-    
 
+}

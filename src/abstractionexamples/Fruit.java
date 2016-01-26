@@ -6,7 +6,7 @@ package abstractionexamples;
  */
 // abstract- I don't want the fruit class to be instantiated 
 public abstract class Fruit implements Plant {
-//should static final properties in abstract classes be private or public?
+
 
     private static final String PLANT_TYPE = "angiosperms";
     private String plantDate;

@@ -10,7 +10,7 @@ package abstractionexamples;
  * @author Jennifer
  */
 public interface Cyborg {
-    public final static String COMPOSTION = "human/mechanical";
+    public final static String COMPOSITION = "human/mechanical";
     public void setCreationDate(String creationDate);
     public String getCreationDate();
     public void setOriginLocation(String originLocation);

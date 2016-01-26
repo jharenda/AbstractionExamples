@@ -10,7 +10,8 @@ package abstractionexamples;
  * @author Jennifer
  */
 public abstract class Footwear implements ManMadeItem {
-private final static String maker = "Coobler";
+
+    private final static String maker = "Coobler";
     private String use = "foot protection";
     private String color;
     private double size;
@@ -29,8 +30,9 @@ private final static String maker = "Coobler";
     public void resole() {
         System.out.println("All footwear can be resoled.");
     }
-  public abstract void make();
-    
+
+    public abstract void make();
+
     public static String getMaker() {
         return maker;
     }
